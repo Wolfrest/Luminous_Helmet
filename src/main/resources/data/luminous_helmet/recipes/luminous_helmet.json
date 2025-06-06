@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "#!#",
+    "#?#",
+    "*#*"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:copper_ingot"
+    },
+    "!": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "?": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "*": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "luminous_helmet:luminous_helmet"
+  }
+
+}

@@ -1,0 +1,14 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="luminous_helmet"
+version="0.1-1.20.1"
+displayName="Luminous Helmet"
+displayURL="https://github.com/Wolfrest/Luminous_Helmet"
+logoFile="pack.png"
+authors="Wolfrest"
+description='''
+Adds a copper helmet that emits light, a replacement for torches in caves and while exploring.
+'''
