@@ -37,7 +37,6 @@ repositories {
 
 dependencies {
     minecraft "net.minecraftforge:forge:1.20.1-47.1.0"
-    implementation fg.deobf("com.moddinglegacy:Lucent-Forge-1.20.1:2.0.10")
 
 }
 
@@ -65,13 +64,8 @@ publishing {
         }
     }
     repositories {
-        maven { url = 'https://maven.minecraftforge.net/' }
-        flatDir {
-            dirs 'libs'
-        }
+
     }
 
-    dependencies {
-        implementation fg.deobf("lucent:lucent:1.0")
-    }
+
 }

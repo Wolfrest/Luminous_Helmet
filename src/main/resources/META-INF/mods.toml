@@ -12,9 +12,3 @@ authors="Wolfrest"
 description='''
 Adds a copper helmet that emits light, a replacement for torches in caves and while exploring.
 '''
-[[dependencies.luminous_helmet]]
-modId="lucent"
-type="required"
-versionRange="[2.0.10,)"
-ordering="AFTER"
-side="CLIENT"
