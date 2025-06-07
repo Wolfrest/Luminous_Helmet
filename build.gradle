@@ -37,8 +37,8 @@ repositories {
 
 dependencies {
     minecraft "net.minecraftforge:forge:1.20.1-47.1.0"
-    // Cambia la versión arriba si usas otra de Forge.
-    // Aquí coloca dependencias opcionales de mods/librerías
+    implementation fg.deobf("com.moddinglegacy:Lucent-Forge-1.20.1:2.0.10")
+
 }
 
 jar {
@@ -65,8 +65,13 @@ publishing {
         }
     }
     repositories {
-        maven {
-            url = "file://${project.projectDir}/mcmodsrepo"
+        maven { url = 'https://maven.minecraftforge.net/' }
+        flatDir {
+            dirs 'libs'
         }
+    }
+
+    dependencies {
+        implementation fg.deobf("lucent:lucent:1.0")
     }
 }

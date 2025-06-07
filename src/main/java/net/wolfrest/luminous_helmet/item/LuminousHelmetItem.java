@@ -23,8 +23,6 @@ public class LuminousHelmetItem extends ArmorItem {
 
     @Override
     public String getArmorTexture(ItemStack stack, net.minecraft.world.entity.Entity entity, EquipmentSlot slot, String type) {
-        // Esta es la ruta absoluta en la carpeta assets/<modid>/textures/models/armor/luminous_helmet.png
-        // ¡CUIDADO con el nombre y la carpeta!
         return LuminousHelmet.MODID + ":textures/models/armor/luminous_helmet.png";
     }
 

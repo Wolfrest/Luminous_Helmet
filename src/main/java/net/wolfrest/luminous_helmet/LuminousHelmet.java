@@ -26,12 +26,8 @@ public class LuminousHelmet
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public LuminousHelmet(FMLJavaModLoadingContext context)
-    {
-        IEventBus modEventBus = context.getModEventBus();
-
-        ModBlocks.BLOCKS.register(context.getModEventBus());
-
+    public LuminousHelmet() {
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(modEventBus);
         HelmetLayers.init(modEventBus);
         // Register the commonSetup method for modloading
@@ -75,11 +71,12 @@ public class LuminousHelmet
     }
     public static ResourceLocation locate(String name)
     {
-        return ResourceLocation.fromNamespaceAndPath(LuminousHelmet.MODID, "textures/models/armor/luminous_helmet.png");
+        return new ResourceLocation(LuminousHelmet.MODID, "textures/models/armor/luminous_helmet.png");
     }
 
     public static String find(String name)
     {
         return LuminousHelmet.MODID + ":" + name;
     }
+
 }

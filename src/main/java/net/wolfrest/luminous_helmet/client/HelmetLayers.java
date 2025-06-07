@@ -30,8 +30,8 @@ public class HelmetLayers {
 
     private static ModelLayerLocation layer(String name, String layer) {
         return new ModelLayerLocation(
-                ResourceLocation.fromNamespaceAndPath(LuminousHelmet.MODID, name),
-                layer // ← CORREGIDO: ahora se usa el parámetro correctamente
+                new ResourceLocation(LuminousHelmet.MODID, name),
+                layer
         );
     }
 }

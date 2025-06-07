@@ -12,7 +12,7 @@ import net.minecraft.world.entity.LivingEntity;
 
 public class LuminousHelmetModel<T extends LivingEntity> extends HumanoidModel<T> {
 	public static final ModelLayerLocation LAYER_LOCATION =
-			new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("luminous_helmet", "luminous_helmet"), "main");
+			new ModelLayerLocation(new ResourceLocation("luminous_helmet", "luminous_helmet"), "main");
 
 	private final ModelPart head;
 
